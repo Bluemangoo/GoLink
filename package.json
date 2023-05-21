@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vercel dev"
+    "serve": "vercel dev",
+    "env": "vercel env pull"
   },
   "dependencies": {
     "vclight": "^1.1.1",
