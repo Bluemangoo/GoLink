@@ -15,9 +15,10 @@ function err(response: ResponseContext) {
 
 router.on("/404/", async function(data, response) {
     const client: MongoClient = mongodb.client;
+    const url = data.url.toString().endsWith("/") ? data.url.toString() : data.url.toString() + "/";
     try {
         await client.connect();
-        const record = await client.db("go-link").collection("links").findOne({ alias: data.url });
+        const record = await client.db("go-link").collection("links").findOne({ alias: url });
         if (record == undefined) {
             err(response);
         } else {
