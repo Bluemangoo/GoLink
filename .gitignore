@@ -1,5 +1,6 @@
 # Project Configs
 /.idea
+.env
 
 # Node Modules
 /node_modules

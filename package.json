@@ -7,6 +7,7 @@
     "env": "vercel env pull"
   },
   "dependencies": {
+    "mongodb": "^5.5.0",
     "vclight": "^1.1.1",
     "vclight-router": "^1.1.5",
     "vercel": "^29.3.6"
