@@ -26,7 +26,7 @@ async function liar(data: RequestContext, response: ResponseContext) {
     response.contentType = CONTENT_TYPE.JSON;
     response.status = 200;
     response.response = {
-        statusCode: 404,
+        statusCode: 200,
         msg: "Bad Request"
     };
 }
